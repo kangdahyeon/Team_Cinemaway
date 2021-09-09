@@ -11,7 +11,7 @@ ul {
     list-style: none;
 }
 #container {
-    margin: 0 auto;     /*화면 중앙에 배치*/
+    margin: 0 auto;     /* 화면 중앙에 배치 */
     width: 1200px;      /*너비 지정*/
 }
 /* 헤더 영역 */
