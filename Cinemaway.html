@@ -16,20 +16,69 @@
                 </a>
             </div>
             <nav>
+                <ul id="topMenu">
+                    <li>
+                        <!--로그인 버튼 누르면 링크로 이동-->
+                        <form  action="https://www.naver.com/">
+                        <button class= "submitbutton" type="submit" onclick="">로그인</button></form>
+                    </li>
 
+                    <li>
+                        <input type="text" placeholder="검색어 입력">
+                    </li>
+                    <li>
+                        <a href="#"> <span>마이페이지▼</span></a>
+                    </li>
+                    <li><a href="#"> <span>고객센터▼</span></a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"> <span>게시판▼</span></a>
+                        <ul>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                            <li><a href="#"></a></li>
+                        </ul>
+                    </li>
+                    <li><a href="#"></a></li>
+                    <li><a href="#"></a></li>
+                </ul>
             </nav>
         </header>
-        <div id ="">
-            <!--헤더 아래의 공간지정-->
-            
+        <div id ="slideShow">
+            <div id = "slides">
+                <img src="images/photo-1.png" alt="">
+                <img src="images/photo-2.png" alt="">
+                <img src="images/photo-3.png" alt="">
+                <button class = "slidebutton" id = "prev">&lang;</button>
+                <button class = "slidebutton" id = "next">&rang;</button>
+            </div>
         </div>
     </div>
+    <div id = "content">
+        <!--여기에 영화 포스터 쫙 놔야함 -->
+        
+    </div>
     <footer>
-        <div id = "">
-
-
+        <div id = "bottomMenu">
+            <ul>
+                <li><a href="#">회사 소개</a></li>
+                <li><a href="#">개인정보 처리 방침</a></li>
+                <li><a href="#">사이트약관</a></li>
+                <li><a href="#">사이트맵</a></li>
+            </ul>
+            <div id="sns">
+                <ul>
+                    <li><a href="#"><img src="images/sns-1.png"></a></li>
+                    <li><a href="#"><img src="images/sns-2.png"></a></li>
+                    <li><a href="#"><img src="images/sns-3.png"></a></li>
+                </ul>
+            </div>
         </div>
     </footer>
-    <script src = ""></script>
+    <script src = "slideShow.js"></script>
 </body>
 </html>
