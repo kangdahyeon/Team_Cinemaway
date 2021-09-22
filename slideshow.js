@@ -22,3 +22,17 @@ function nextSlide() {
      else current = 0;
      showSlides(current);
 }
+
+var slideIndex = 0;
+carousel();
+
+function carousel() {
+    var autoslide = document.querySelectorAll("#slides > img");
+    for (var i = 0; i < autoslide.length; i++) {
+        autoslide[i].style.display = "none";
+    }
+    slideIndex++;
+    if (slideIndex > autoslide.length) {slideIndex = 1}
+    autoslide[slideIndex-1].style.display = "block";
+    setTimeout(carousel, 5000); 
+}
