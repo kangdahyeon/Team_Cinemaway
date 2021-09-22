@@ -62,15 +62,13 @@ nav {
     height: 25px;
    
 } */
-
-
 .submitbutton { 
     margin-left: 20px;
     width: 50px;
-  
 }
 /*input 타입으로 버튼 지정 할 때*/
 input#login {
+    cursor: pointer;
     background: url("images/login.png");
     background-repeat: no-repeat;
     margin-left: 20px;
@@ -128,6 +126,7 @@ input#login {
     position: relative;
 }
 #slides {
+    cursor: pointer;
     position: absolute;
 }
 #slides > img {
@@ -161,6 +160,8 @@ input#login {
 .slidebutton:focus {  /* 아웃라인 없앰 */
     outline: 1px;
 }
+/* 슬라이드 하단 버튼 */
+
 /* 콘텐츠 영역 */
 #contents {
     width: 100%;
