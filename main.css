@@ -2,12 +2,9 @@
 .allfont {
     font-family: 'Anton', sans-serif;
 }
-#bigfontsize {
-    size: 30px;
-}
 #loginbt {
     padding-left: 20px;
 }
 #Firstlist {
-    padding-left: 15px;
+    padding: 10px 0px 0px 15px;
 }
