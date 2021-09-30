@@ -55,9 +55,9 @@
               <li class="nav-item dropdown">
                   <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
                   <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                      <li><a class="dropdown-item" href="#">리뷰게시판</a></li>
+                      <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
                       <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">자유게시판</a></li>
+                      <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
                       <li><div class="dropdown-divider"></div></li>
                       <li><a class="dropdown-item" href="#">고객센터</a></li>
                   </ul>
@@ -101,16 +101,16 @@
           <hr>
           <!--왼쪽 게시판 내 선택상자-->
           <div class="list-group">
-            <a href="#" class="list-group-item list-group-item-action bg-dark active" aria-current="true">
+            <a href="Cinemaway_review.html" class="list-group-item list-group-item-action bg-dark active" aria-current="true">
               리뷰게시판
             </a>
-            <a href="#" class="list-group-item list-group-item-action">자유게시판</a>
+            <a href="Cinemaway_pre.html" class="list-group-item list-group-item-action">자유게시판</a>
             <a href="#" class="list-group-item list-group-item-action">고객센터</a>
           </div>
         </div>
         <!--게시판 테이블 시작-->
         <div class="col">
-            <table class="table table-hover">
+            <table class="table table-hover" style="cursor: pointer;">
                 <thead>
                   <h2>리뷰게시판</h2>
                   <tr>
@@ -122,12 +122,13 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onclick="location.href='Cinemaway_review_click.html'">
                     <th scope="row">1</th>
                     <td>&#60숨겨진 기적을 만나보세요&#62;</td>
                     <td>sad****</td>
                     <td>2021.09.21</td>
                     <td>10</td>
+                    </a>
                   </tr>
                   <tr>
                     <th scope="row">2</th>
@@ -189,7 +190,7 @@
               </table>
               <!--글쓰기 버튼 자리 지정-->
               <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-                <button type="button" class="btn btn-outline-secondary "><i class="bi bi-pen"></i>글쓰기</button>
+                <button type="button" class="btn btn-outline-secondary" onclick="location.href='Cinemaway_page_writer.html'"><i class="bi bi-pen"></i>글쓰기</button>
               </div>
         </div>
     </div>
