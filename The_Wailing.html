@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>The_Wailing</title>
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <script src="https://kit.fontawesome.com/e13e35fb00.js" crossorigin="anonymous"></script>
+  <script src="js/bootstrap.bundle.min.js"></script>
+  <script src="js/jquery-3.6.0.min.js"></script>
+  <script src="js/slick.min.js"></script>
+  <link rel="stylesheet" href="css/slick-theme.css">
+  <link rel="stylesheet" href="css/slick.css">
+  <link rel="stylesheet" href='http://fonts.googleapis.com/css?family=Dosis:400,700,500|Nunito:300,400,600'>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Noto+Sans+KR:wght@100;300;400;500&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/css/swiper.min.css">
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/Swiper/4.5.1/js/swiper.min.js"></script>
+  <link rel="stylesheet" href="css/movie.css">
+  <script src="js/movie.js" defer></script>
+<link rel="stylesheet" href="css/albery.css">
+<script src="js/albery.js"></script>
+<!-- <link rel="stylesheet" href="css/cinema_style.css"> 적용하면 여행지 소개가 망함--> 
+
+<style>
+  .back_img {
+    background: url("image1/12/11.jpg") center/cover no-repeat;
+    background-position: center top;
+    background-size: cover;
+  
+  }
+  .card-body {
+    height: 250px;
+  }
+  .card-text {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    display: -webkit-box;
+    -webkit-line-clamp: 4; /* 라인수 */
+    -webkit-box-orient: vertical;
+    word-wrap:break-word; 
+  }
+</style>
+
+</head>
+<body>
+
+  <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
+    <div class="container">
+
+
+        <!-- 가로 작아질때 메뉴 왼쪽에 三으로 보이게, 게시판 목록과 연결하기 -->
+        <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+        </button> 
+        <!-- 三 끝 -->
+
+
+
+        <!-- 로고부분 (나중에 경로수정하기) -->
+        <a href="index_test.html" class="navbar-brand logo-image">
+            <img src="C:\Users\JEH\Desktop\Dev211\CinemaWay_home\images\cinemaway_logo.png" alt="logo"></a> 
+
+        
+
+        <!-- 게시판 목록 -->
+            <div class="collapse navbar-collapse" id="navbarSideCollapse">
+            <ul class="navbar-nav mr-auto">
+                <li class="nav-item">
+                    <a class="nav-link" href="#">영화</a>
+                </li>
+                <li class="nav-item">
+                    <a class="nav-link" href="#">TV 프로그램</a>
+                </li>
+                <li class="nav-item dropdown">
+                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                        <li><a class="dropdown-item" href="#">리뷰게시판</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <li><a class="dropdown-item" href="#">자유게시판</a></li>
+                        <li><div class="dropdown-divider"></div></li>
+                        <li><a class="dropdown-item" href="#">고객센터</a></li>
+                    </ul>
+            </ul>
+        </div>
+            <!-- 게시판 목록 끝 -->
+
+
+
+
+        <!-- 검색창 -->
+        <!-- d-inline-flex : 부모영역의 테두리가 자식의 크기에 맞게 줄어듬 자신또한 in-line처럼 배치가능 -->
+            <div class="d-inline-flex justify-content-right">
+                <!-- <div class="col-md-5"> -->
+                    <div class="form">
+                       <i class="fa fa-search"></i>
+                       <input type="text" class="form-control form-input" placeholder="작품 또는 장소를 검색해보세요.">
+                       <span class="right-pan"></span>
+                    </div>
+                <!-- </div> -->
+            <!-- </div> -->
+
+            <!-- 검색창 끝 -->
+
+
+
+        <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
+            <ul class="navbar-nav ms-auto navbar-nav-scroll">
+                <li class="nav-item">
+                    <a class="nav-link active" aria-current="page" href="#">로그인</a>
+                </li>
+            </ul>
+            <span class="nav-item">
+                <a class="btn-outline-sm" href="#">회원가입</a>
+            </span>
+        </div> <!-- end of navbar-collapse -->
+    </div> <!-- end of container -->
+</nav> <!-- end of navbar -->
+<!-- 네비게이션 끝 -->
+
+
+
+
+
+
+
+  <!-- 배경 상단 백그라운드 이미지  -->
+  <div class="back_img">
+  </div>
+
+
+
+
+  <!-- 영화  포스터 및 정보 섹션 -->
+<section id="movie">
+  
+    <div class="poster">
+      <img src="image1/12/The_Wailing_(film).png">
+
+    </div>
+
+    <div class="movie_contents">
+      <h2>곡성(哭聲)</h2>
+      <sub>2015 ・ 미스터리/스릴러/드라마 ・ 한국</sub><br><br>
+      <p>The Wailing</p>
+      <p>평균 ★3.8 (41만명)</p>
+        <button type="button" class="btn btn-danger" onclick="location.href='Cinemaway_review.html'"><i class="fas fa-pencil-alt"></i>  Review</button>
+    </div>
+  </section>
+
+
+ <!--첫 번째 섹션-->
+ 
+
+
+<div class="about_movie">
+
+</section>
+
+<section class="movie_content">
+
+<div class="d-none d-md-block">
+  <div class="container">
+      <div class="row">
+          <div class="col-md-10 text-black">
+              <h4>기본 정보</h4><br>
+              <p>곡성(哭聲)<br>
+                2015 · 한국 · 미스터리<br>
+                시간 36분 · 15세<br>
+                <br>낯선 외지인이 나타난 후 벌어지는 의문의 연쇄 사건들로 마을이 발칵 뒤집힌다. 
+                경찰은 집단 야생 버섯 중독으로 잠정적 결론을 내리지만 모든 사건의 원인이 그 외지인 
+                때문이라는 소문과 의심이 걷잡을 수 없이 퍼져 나간다. 경찰 ‘종구’(곽도원)는 현장을 
+                목격했다는 여인 ‘무명’(천우희)을 만나면서 외지인에 대한 소문을 확신하기 시작한다. 
+                딸 ‘효진’이 피해자들과 비슷한 증상으로 아파오기 시작하자 다급해진 ‘종구’. 
+                외지인을 찾아 난동을 부리고, 무속인 ‘일광’(황정민)을 불러 들이는데...</p>
+        </div>
+      </div>
+  </div>
+</div>
+
+</section>
+
+
+   <!--두 번째 섹션-->
+
+    <section class="movie_content">
+
+   <div class="box-padding grey-bg" style="padding-top: 32px;">
+    <div class="container">
+        <div class="row">
+          <div class="col-md-6">
+            <div class="box-padding">
+                  <!--캐러셀 영역 설정-->
+                  <div class="carousel slide" data-bs-ride="carousel" id="movie1"> 
+                      <!--캐러셀 슬라이드 영역-->
+                      <div class="carousel-inner">
+                          <!--캐러셀 슬라이드 콘텐츠 추가-->
+                          <div class="img-wrap carousel-item active">
+                              <img src="image1/12/66.jpg">
+                              <!--캐러셀 슬라이드 제목 및 설명 추가-->
+                             
+                          </div>
+                          <div class="carousel-item">
+                              <img src="image1/12/44.jpg">
+                          </div>
+                          <div class="carousel-item">
+                              <img src="image1/12/55.jpg">
+                          </div>
+                          
+                      </div>
+          
+                      <!--캐러셀 좌우 버튼 영역-->
+                      <a href="#movie1" class="carousel-control-prev" data-bs-slide="prev">
+                          <span class="carousel-control-prev-icon"></span>
+                      </a>
+                      <a href="#movie1" class="carousel-control-next" data-bs-slide="next">
+                          <span class="carousel-control-next-icon"></span>
+                      </a>
+                  </div>
+        </div>
+    </div>
+    <div class="col-md-6">
+      <div id="map" style="width:100%;height:250px;"></div>
+    
+</div>
+</div>
+</div>
+</div>
+</section>
+
+<!--세 번째 섹션-->
+
+<section class="movie_content" style="border-bottom: transparent;">
+
+<div class="box-padding grey-bg">
+  <div class="container">
+      <div class="row">
+        <h3>여행지에 대한 소개</h3><br>
+        <div id="carouselFourColumn" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+          <li data-target="#carouselFourColumn" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselFourColumn" data-slide-to="1"></li>
+          <li data-target="#carouselFourColumn" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/111.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/222.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/333.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/444.jpg" class="w-100">
+              </div>
+              </div>
+            </div>
+          </div>
+          <div class="carousel-item">
+          <div class="row">
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/555.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/666.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/111.jpg" class="w-100">
+              </div>
+              </div>
+              <div class="col-xl-3 p-1">				
+              <div class="card">
+                <img src="image1/12/222.jpg" class="w-100">
+              </div>
+              </div>
+            </div>
+          </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselFourColumn" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselFourColumn" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          </a>
+        </div>
+  </div>
+</div>
+</div>
+
+</section>
+
+  <!--네 번째 섹션-->
+
+  <section class="movie_content">
+
+  <div class="d-none d-md-block box-padding-big">
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                
+                <p>석곡면 여운마을에는 영화 ''곡성''에 등장했던 ''외지인의 집''이 있다. 
+                  영화 ''곡성''은 낯선 외지인(일본 사람)이 나타난 후 벌어지는 의문의 연쇄살인사건에 대한 미스터리한 이야기이다. 
+                  주인공 종구가 집을 부수며 이 마을을 떠나라고 외치던 외지인의 집은 마을 끝 쪽 마지막 집, 산 깊숙이 자리 잡고 있다. 
+                  또한 이곳에서 석곡공용터미널 방향으로 15분 가량 차로 이동하면 석곡초등학교가 나온다. 
+                  석곡초등학교 앞에는 종구가 딸 효진에게 머리핀을 사줬던 청림문구사가 있다.
+                  
+                </p>
+            </div>
+        </div>
+    </div>
+</div>
+</section>
+
+<!--다섯 번째 섹션-->
+
+<section class="movie_content">
+
+<div class="box-padding grey-bg">
+  <div class="container">
+      <div class="row">
+        <div class="aa text-black"><h3>여행지 리뷰</h3></div>
+      </div>
+      
+        <div id="carouselThreeColumn" class="carousel slide" data-ride="carousel">
+          <ol class="carousel-indicators">
+          <li data-target="#carouselThreeColumn" data-slide-to="0" class="active"></li>
+          <li data-target="#carouselThreeColumn" data-slide-to="1"></li>
+          <li data-target="#carouselThreeColumn" data-slide-to="2"></li>
+          </ol>
+          <div class="carousel-inner">
+          <div class="carousel-item active">
+            <div class="row">
+              <div class="col-xl-4 p-1">				
+              <div class="card">
+                <img src="image1/12/6666.jpg" class="w-100">
+                <div class="card-body">
+                  <h5 class="card-title">사랑하는 한용원</h5>
+                  <p class="card-text">평점 ★5.0/5.0</p>
+                  <p class="card-text">사랑하는 한용원님과 좋은 여행지 다녀왔습니다. 이렇게 좋은 날씨에 한용원님과 이곳저곳
+                                      다니면서 맛있는 맛집들도 돌아다녔습니다. 사랑하는 연인과 같이 여행하기 좋은곳입니다.
+                  </p>
+                  </div>
+              </div>
+              </div>	
+              <div class="col-xl-4 p-1">				
+                <div class="card">
+                  <img src="image1/12/5555.jpg" class="w-100">
+                  <div class="card-body">
+                    <h5 class="card-title">행복한 하루 그리고 한용원</h5>
+                    <p class="card-text">평점 ★5.0/5.0</p>
+                    <p class="card-text">한용원님이 추천하신 여행지 너무 좋았어요 가족들과 행복한 시간 보냈어요</p>
+                  </div>
+                </div>
+                </div>	
+                <div class="col-xl-4 p-1">				
+                  <div class="card">
+                    <img src="image1/12/4444.jpg" class="w-100">
+                    <div class="card-body">
+                      <h5 class="card-title">한용원 그는 누구인가</h5>
+                      <p class="card-text">평점 ★5.0/5.0</p>
+                      <p class="card-text">킹갓제네럴엠페러충무공마제스티하이퍼울트라판타스틱익스트림지니어스화룡정점마스터한용원</p>
+                      </div>
+                  </div>
+                  </div>	
+            </div>
+          </div>
+          <div class="carousel-item">
+          <div class="row">
+            <div class="col-xl-4 p-1">				
+              <div class="card">
+                <img src="image1/12/3333.jpg" class="w-100">
+                <div class="card-body">
+                  <h5 class="card-title">한용원 그는 누구인가</h5>
+                  <p class="card-text">평점 ★5.0/5.0</p>
+                  <p class="card-text">킹갓제네럴엠페러충무공마제스티하이퍼울트라판타스틱익스트림지니어스화룡정점마스터한용원</p>
+                  </div>
+              </div>
+              </div>	
+              <div class="col-xl-4 p-1">				
+                <div class="card">
+                  <img src="image1/12/2222.jpg" class="w-100">
+                  <div class="card-body">
+                    <h5 class="card-title">사랑하는 한용원</h5>
+                    <p class="card-text">평점 ★5.0/5.0</p>
+                    <p class="card-text">사랑하는 한용원님과 좋은 여행지 다녀왔습니다. 이렇게 좋은 날씨에 한용원님과 이곳저곳
+                                        다니면서 맛있는 맛집들도 돌아다녔습니다. 사랑하는 연인과 같이 여행하기 좋은곳입니다.
+                    </p>
+                    </div>
+                </div>
+                </div>	
+                <div class="col-xl-4 p-1">				
+                  <div class="card">
+                    <img src="image1/12/1111.jpg" class="w-100">
+                    <div class="card-body">
+                      <h5 class="card-title">행복한 하루 그리고 한용원</h5>
+                      <p class="card-text">평점 ★5.0/5.0</p>
+                      <p class="card-text">한용원님이 추천하신 여행지 너무 좋았어요 가족들과 행복한 시간 보냈어요</p>
+                    </div>
+                    </div>
+                  </div>	
+            </div>
+          </div>
+          <a class="carousel-control-prev" href="#carouselThreeColumn" role="button" data-slide="prev">
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          </a>
+          <a class="carousel-control-next" href="#carouselThreeColumn" role="button" data-slide="next">
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="sr-only"></span>
+          </a>
+        </div>
+        </div>
+      </div>
+  </div>
+
+</section>
+
+</div> <!--a클라스 마지막-->
+
+  <!-- 임시로 배껴온 푸터  -->
+<div class="footer bg-dark">
+    <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <div class="footer-col first">
+                            <h6>CinemaWay</h6>
+                            <p class="p-small">CinemaWay 어쩌구 저쩌구<br>비트캠프 JAVA 211기 B-4조</p>
+                            <p class="p-small">강남 어쩌구 비트캠프 주소 적기</p>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col second">
+                            <h6>Links</h6>
+                            <ul class="list-unstyled li-space-lg p-small">
+                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
+                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
+                                <li>Menu: <a href="#header">Home</a>, <a href="#details">Details</a>, <a href="#services">Services</a>, <a href="#contact">Contact</a></li>
+                            </ul>
+                        </div> <!-- end of footer-col -->
+                        <div class="footer-col third">
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-twitter fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-pinterest-p fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <span class="fa-stack">
+                                <a href="#your-link">
+                                    <i class="fas fa-circle fa-stack-2x"></i>
+                                    <i class="fab fa-instagram fa-stack-1x"></i>
+                                </a>
+                            </span>
+                            <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
+                        </div> <!-- end of footer-col -->
+                    </div> <!-- end of col -->
+                </div> <!-- end of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of footer -->  
+        <!-- end of footer -->
+        
+        
+        <!-- 카피라이트 -->
+        <div class="copyright bg-dark">
+            <div class="container">
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">Copyright © <a href="#">JAVA211 BitCamp B-4, All rights reserved.</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+    
+                <div class="row">
+                    <div class="col-lg-12">
+                        <p class="p-small">어쩌구 저쩌구 <a href="#">으짜구저쩌구</a></p>
+                    </div> <!-- end of col -->
+                </div> <!-- enf of row -->
+            </div> <!-- end of container -->
+        </div> <!-- end of copyright --> 
+        <!-- end of copyright -->
+
+  <!-- Optional JavaScript -->
+  <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+  <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
+  <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js" integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM" crossorigin="anonymous"></script>
+  <script type="text/javascript" src="https://dapi.kakao.com/v2/maps/sdk.js?appkey=f227d02def2a3ff8e10e918268f049ab"></script>
+  <script>
+    var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
+        mapOption = { 
+            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+            level: 3 // 지도의 확대 레벨
+        };
+    
+    // 지도를 표시할 div와  지도 옵션으로  지도를 생성합니다
+    var map = new kakao.maps.Map(mapContainer, mapOption); 
+    </script>
+
+    </body>
+    </html>
+    
+    
+    
+    
+    
+    
+    
+
+  
+  
+</body>
+</html>
