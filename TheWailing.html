@@ -3,7 +3,7 @@
   <meta charset="UTF-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>The_Wailing</title>
+  <title>The Wailing</title>
   <link rel="stylesheet" href="css/bootstrap.min.css">
   <script src="https://kit.fontawesome.com/e13e35fb00.js" crossorigin="anonymous"></script>
   <script src="js/bootstrap.bundle.min.js"></script>
@@ -21,7 +21,7 @@
   <script src="js/movie.js" defer></script>
 <link rel="stylesheet" href="css/albery.css">
 <script src="js/albery.js"></script>
-<!-- <link rel="stylesheet" href="css/cinema_style.css"> 적용하면 여행지 소개가 망함--> 
+<link rel="stylesheet" href="css/nav-fo.css">
 
 <style>
   .back_img {
@@ -45,7 +45,6 @@
 
 </head>
 <body>
-
   <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
     <div class="container">
 
@@ -53,37 +52,52 @@
         <!-- 가로 작아질때 메뉴 왼쪽에 三으로 보이게, 게시판 목록과 연결하기 -->
         <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
             <span class="navbar-toggler-icon"></span>
-        </button> 
+        </button>
         <!-- 三 끝 -->
 
 
 
         <!-- 로고부분 (나중에 경로수정하기) -->
-        <a href="index_test.html" class="navbar-brand logo-image">
-            <img src="C:\Users\JEH\Desktop\Dev211\CinemaWay_home\images\cinemaway_logo.png" alt="logo"></a> 
+        <a href="CinemaWay_main.html" class="navbar-brand logo-image">
+            <img src="images/cinemaway_logo.png" alt="logo"></a> 
 
         
 
         <!-- 게시판 목록 -->
-            <div class="collapse navbar-collapse" id="navbarSideCollapse">
-            <ul class="navbar-nav mr-auto">
-                <li class="nav-item">
-                    <a class="nav-link" href="#">영화</a>
-                </li>
-                <li class="nav-item">
-                    <a class="nav-link" href="#">TV 프로그램</a>
-                </li>
-                <li class="nav-item dropdown">
-                    <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
-                    <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                        <li><a class="dropdown-item" href="#">리뷰게시판</a></li>
-                        <li><div class="dropdown-divider"></div></li>
-                        <li><a class="dropdown-item" href="#">자유게시판</a></li>
-                        <li><div class="dropdown-divider"></div></li>
-                        <li><a class="dropdown-item" href="#">고객센터</a></li>
-                    </ul>
-            </ul>
-        </div>
+        <div class="collapse navbar-collapse" id="navbarSideCollapse">
+          <ul class="navbar-nav mr-auto">
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">영화추천</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                      <li><a class="dropdown-item" href="BudapestHotel.html">추천영화</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="littelForest.html">계절별영화</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="The_Wailing.html">분위기별영화</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">장소추천</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                      <li><a class="dropdown-item" href="#">국내/해외</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="#">계절별영화</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="#">분위기별영화</a></li>
+                  </ul>
+              </li>
+              <li class="nav-item dropdown">
+                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                      <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
+                      <li><div class="dropdown-divider"></div></li>
+                      <li><a class="dropdown-item" href="Cinemaway_QNA1.html">고객센터</a></li>
+                  </ul>
+              </li>
+          </ul>
+      </div>
             <!-- 게시판 목록 끝 -->
 
 
@@ -94,7 +108,8 @@
             <div class="d-inline-flex justify-content-right">
                 <!-- <div class="col-md-5"> -->
                     <div class="form">
-                       <i class="fa fa-search"></i>
+                      <!-- 검색 폰트 위치 수정 -->
+                       <i class="fa fa-search" style="transform: translate(-6px,-8px);"></i>
                        <input type="text" class="form-control form-input" placeholder="작품 또는 장소를 검색해보세요.">
                        <span class="right-pan"></span>
                     </div>
@@ -107,19 +122,17 @@
 
         <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
             <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                <li class="nav-item">
-                    <a class="nav-link active" aria-current="page" href="#">로그인</a>
+                <li class="nav-item p-3" style="cursor: pointer;" onclick="location.href='Cinemaway_login.html'">로그인
+                    <!-- <a class="nav-link active" aria-current="page" href="Cinemaway_login.html">로그인</a> -->
                 </li>
             </ul>
             <span class="nav-item">
-                <a class="btn-outline-sm" href="#">회원가입</a>
+                <a class="btn-outline-sm" onclick="location.href='movie-signin.html'">회원가입</a>
             </span>
         </div> <!-- end of navbar-collapse -->
     </div> <!-- end of container -->
 </nav> <!-- end of navbar -->
 <!-- 네비게이션 끝 -->
-
-
 
 
 
@@ -137,16 +150,71 @@
   
     <div class="poster">
       <img src="image1/12/The_Wailing_(film).png">
-
+      
     </div>
+    <div class="about_movie">
 
-    <div class="movie_contents">
       <h2>곡성(哭聲)</h2>
       <sub>2015 ・ 미스터리/스릴러/드라마 ・ 한국</sub><br><br>
       <p>The Wailing</p>
       <p>평균 ★3.8 (41만명)</p>
-        <button type="button" class="btn btn-danger" onclick="location.href='Cinemaway_review.html'"><i class="fas fa-pencil-alt"></i>  Review</button>
+      
+      
+      <!-- 리뷰 모달 기능 -->
+      
+        <!-- Button trigger modal -->
+<button type="button" class="btn btn-danger" data-bs-toggle="modal" data-bs-target="#exampleModal">
+  <i class="fas fa-pencil-alt"></i>  Review
+</button>
+
+<!-- Modal -->
+<div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <h5 class="modal-title" id="exampleModalLabel">Cinemaway</h5>
+        <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+      </div>
+      <div class="modal-body">
+        <h2 style="text-align: center;">리뷰 작성하기</h2>
+        <div class="star-rating space-x-4 mx-auto">
+          <input type="radio" id="5-stars" name="rating" value="5" v-model="ratings"/>
+          <label for="5-stars" class="star pr-4">★</label>
+          <input type="radio" id="4-stars" name="rating" value="4" v-model="ratings"/>
+          <label for="4-stars" class="star">★</label>
+          <input type="radio" id="3-stars" name="rating" value="3" v-model="ratings"/>
+          <label for="3-stars" class="star">★</label>
+          <input type="radio" id="2-stars" name="rating" value="2" v-model="ratings"/>
+          <label for="2-stars" class="star">★</label>
+          <input type="radio" id="1-star" name="rating" value="1" v-model="ratings" />
+          <label for="1-star" class="star">★</label>
+        </div>
+        <textarea name="" id="" cols="55" rows="20" style="margin-top: 20px;" placeholder=" 텍스트를 입력하세요."></textarea>
+       
+        
+        <div class="filebox"> 
+          <label for="file">업로드</label> 
+          <input type="file" id="file"> 
+          
+          <input class="upload-name" value="파일선택">
+        </div>
+
+          
+      </div>
+      <div class="modal-footer">
+        <span class="icon"><i class="fab fa-twitter"></i>
+          <i class="fab fa-instagram"></i>
+          <i class="fab fa-facebook-square"></i></span>
+        
+        <button type="button" class="btn btn-primary sign_up" data-bs-dismiss="modal">리뷰 등록</button>
+        <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">닫기</button>
+      </div>
     </div>
+  </div>
+</div>
+
+  
+  </div>
   </section>
 
 
@@ -154,10 +222,8 @@
  
 
 
-<div class="about_movie">
 
-</section>
-
+ <div class="back_color">
 <section class="movie_content">
 
 <div class="d-none d-md-block">
@@ -186,8 +252,10 @@
 
     <section class="movie_content">
 
-   <div class="box-padding grey-bg" style="padding-top: 32px;">
+      
+   <div class="box-padding grey-bg">
     <div class="container">
+      <h5><i class="fas fa-map-marker-alt"></i> 전남 곡성</h5><br>
         <div class="row">
           <div class="col-md-6">
             <div class="box-padding">
@@ -221,7 +289,7 @@
         </div>
     </div>
     <div class="col-md-6">
-      <div id="map" style="width:100%;height:250px;"></div>
+      <div id="map" style="width:100%;height:425px;"></div>
     
 </div>
 </div>
@@ -433,78 +501,70 @@
   </div>
 
 </section>
-
 </div> <!--a클라스 마지막-->
+ <!-- 푸터 영역-->
+ <footer class="ht-footer full-width-ft">
+	<div class="row">
+		<div class="flex-parent-ft">
+			<div class="flex-child-ft item1">
+				 <a href="#"><img class="logo" src="images/logo1.png" alt=""></a>
+				 <p>비트캠프 | <br>
+                    서울 강남구 강남대로94길 20, 삼오빌딩(5층 ~ 9층)</p>
+				<p>Bitcamp : <a href="#">JAVA 211 B-4</a></p>
+			</div>
+			<div class="flex-child-ft item2">
+				<h4>Resources</h4>
+				<ul>
+					<li><a href="#">서비스 이용약관</a></li> 
+					<li><a href="#">개인정보 처리방침</a></li>
+					<li><a href="#">회사 안내</a></li>
+				</ul>
+			</div>
+            <div class="flex-child-ft item3">
+				<h4>JAVA 211 B-4</h4>
+				<ul>
+                    <p>한용원<br>오석<br>지은혜<br>강다현<br>이영호</p>
+				</ul>
+			</div>
+			<div class="flex-child-ft item4">
+				<h4>Copyright</h4>
+				<p>© 2021 by JAVA 211 B-4, Inc. All rights reserved.</p>
+			</div>
+            <div class="flex-child-ft item5">
+				<h4></h4>
+				<ul>
+				</ul>
+			</div>
+		</div>
+		</div>
+	</div>
+</footer>
+<!-- 푸터 끗-->
+        <script>
+          
+// navbar transparent
+const navbar = document.querySelector('#navbar');
+const navbarHeight = navbar.getBoundingClientRect().height;
 
-  <!-- 임시로 배껴온 푸터  -->
-<div class="footer bg-dark">
-    <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <div class="footer-col first">
-                            <h6>CinemaWay</h6>
-                            <p class="p-small">CinemaWay 어쩌구 저쩌구<br>비트캠프 JAVA 211기 B-4조</p>
-                            <p class="p-small">강남 어쩌구 비트캠프 주소 적기</p>
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-col second">
-                            <h6>Links</h6>
-                            <ul class="list-unstyled li-space-lg p-small">
-                                <li>Important: <a href="terms.html">Terms & Conditions</a>, <a href="privacy.html">Privacy Policy</a></li>
-                                <li>Useful: <a href="#">Colorpicker</a>, <a href="#">Icon Library</a>, <a href="#">Illustrations</a></li>
-                                <li>Menu: <a href="#header">Home</a>, <a href="#details">Details</a>, <a href="#services">Services</a>, <a href="#contact">Contact</a></li>
-                            </ul>
-                        </div> <!-- end of footer-col -->
-                        <div class="footer-col third">
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-facebook-f fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-twitter fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-pinterest-p fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <span class="fa-stack">
-                                <a href="#your-link">
-                                    <i class="fas fa-circle fa-stack-2x"></i>
-                                    <i class="fab fa-instagram fa-stack-1x"></i>
-                                </a>
-                            </span>
-                            <p class="p-small">We would love to hear from you <a href="mailto:contact@site.com"><strong>contact@site.com</strong></a></p>
-                        </div> <!-- end of footer-col -->
-                    </div> <!-- end of col -->
-                </div> <!-- end of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of footer -->  
-        <!-- end of footer -->
-        
-        
-        <!-- 카피라이트 -->
-        <div class="copyright bg-dark">
-            <div class="container">
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="p-small">Copyright © <a href="#">JAVA211 BitCamp B-4, All rights reserved.</a></p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-    
-                <div class="row">
-                    <div class="col-lg-12">
-                        <p class="p-small">어쩌구 저쩌구 <a href="#">으짜구저쩌구</a></p>
-                    </div> <!-- end of col -->
-                </div> <!-- enf of row -->
-            </div> <!-- end of container -->
-        </div> <!-- end of copyright --> 
-        <!-- end of copyright -->
+document.addEventListener('scroll',() => {
+  // console.log(window.scrollY);
+  if(window.scrollY>navbarHeight){
+    navbar.classList.add('navbar_display');
+  }else{
+    navbar.classList.remove('navbar_display');
+  }
+});
+
+
+
+// 모달 부분 파일 불러오기
+$("#file").on('change',function(){
+  var fileName = $("#file").val();
+  $(".upload-name").val(fileName);
+});
+
+// 불러오기 끝
+        </script>
 
   <!-- Optional JavaScript -->
   <!-- jQuery first, then Popper.js, then Bootstrap JS -->
@@ -515,7 +575,7 @@
   <script>
     var mapContainer = document.getElementById('map'), // 지도를 표시할 div 
         mapOption = { 
-            center: new kakao.maps.LatLng(33.450701, 126.570667), // 지도의 중심좌표
+          center: new kakao.maps.LatLng(35.27742282230146, 127.27614031398059), // 지도의 중심좌표
             level: 3 // 지도의 확대 레벨
         };
     

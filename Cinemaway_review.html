@@ -32,58 +32,68 @@
 <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
   <div class="container">
 
+
       <!-- 가로 작아질때 메뉴 왼쪽에 三으로 보이게, 게시판 목록과 연결하기 -->
       <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
           <span class="navbar-toggler-icon"></span>
       </button>
       <!-- 三 끝 -->
 
+
+
       <!-- 로고부분 (나중에 경로수정하기) -->
-      <a href="index_test.html" class="navbar-brand logo-image">
-          <img src="images/logo.JPG" alt="logo"></a> 
+      <a href="CinemaWay_main.html" class="navbar-brand logo-image">
+          <img src="images/cinemaway_logo.png" alt="logo"></a> 
+
+      
 
       <!-- 게시판 목록 -->
-          <div class="collapse navbar-collapse" id="navbarSideCollapse">
-          <ul class="navbar-nav mr-auto">
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">영화추천</a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                      <li><a class="dropdown-item" href="#">추천영화</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">계절별영화</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">분위기별영화</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">장소추천</a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                      <li><a class="dropdown-item" href="#">추천영화</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">계절별영화</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">분위기별영화</a></li>
-                  </ul>
-              </li>
-              <li class="nav-item dropdown">
-                  <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
-                  <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                      <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
-                      <li><div class="dropdown-divider"></div></li>
-                      <li><a class="dropdown-item" href="#">고객센터</a></li>
-                  </ul>
-              </li>
-          </ul>
-      </div>
+      <div class="collapse navbar-collapse" id="navbarSideCollapse">
+        <ul class="navbar-nav mr-auto">
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">영화추천</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="BudapestHotel.html">추천영화</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="littelForest.html">계절별영화</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="The_Wailing.html">분위기별영화</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">장소추천</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="#">국내/해외</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="#">계절별영화</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="#">분위기별영화</a></li>
+                </ul>
+            </li>
+            <li class="nav-item dropdown">
+                <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+                <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                    <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
+                    <li><div class="dropdown-divider"></div></li>
+                    <li><a class="dropdown-item" href="Cinemaway_QNA1.html">고객센터</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div>
           <!-- 게시판 목록 끝 -->
+
+
+
+
       <!-- 검색창 -->
       <!-- d-inline-flex : 부모영역의 테두리가 자식의 크기에 맞게 줄어듬 자신또한 in-line처럼 배치가능 -->
           <div class="d-inline-flex justify-content-right">
               <!-- <div class="col-md-5"> -->
                   <div class="form">
-                     <i class="fa fa-search"></i>
+                    <!-- 검색 폰트 위치 수정 -->
+                     <i class="fa fa-search" style="transform: translate(-6px,-8px);"></i>
                      <input type="text" class="form-control form-input" placeholder="작품 또는 장소를 검색해보세요.">
                      <span class="right-pan"></span>
                   </div>
@@ -91,10 +101,13 @@
           <!-- </div> -->
 
           <!-- 검색창 끝 -->
+
+
+
       <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
           <ul class="navbar-nav ms-auto navbar-nav-scroll">
-              <li class="nav-item">
-                  <a class="nav-link active" aria-current="page" href="Cinemaway_login.html">로그인</a>
+              <li class="nav-item p-3" style="cursor: pointer;" onclick="location.href='Cinemaway_login.html'">로그인
+                  <!-- <a class="nav-link active" aria-current="page" href="Cinemaway_login.html">로그인</a> -->
               </li>
           </ul>
           <span class="nav-item">
@@ -104,6 +117,8 @@
   </div> <!-- end of container -->
 </nav> <!-- end of navbar -->
 <!-- 네비게이션 끝 -->
+
+
 </div>
 <div class="m-5"><img src="images/자리차지용.jpg" alt=""></div>
 <div class="container gap-2">
@@ -117,7 +132,7 @@
               리뷰게시판
             </a>
             <a href="Cinemaway_pre.html" class="list-group-item list-group-item-action">자유게시판</a>
-            <a href="#" class="list-group-item list-group-item-action">고객센터</a>
+            <a href="Cinemaway_QNA1.html" class="list-group-item list-group-item-action">고객센터</a>
           </div>
         </div>
         <!--게시판 테이블 시작-->

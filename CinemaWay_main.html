@@ -9,7 +9,7 @@
     <link rel="stylesheet" href="css/cinema_style.css">
     <script src="js/bootstrap.bundle.min.js"></script>
     <script src="js/jquery-3.6.0.min.js"></script>
-
+  
     <!-- 검색창 스크립트 -->
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/font-awesome/4.7.0/css/font-awesome.min.css">
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js" integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1" crossorigin="anonymous"></script>
@@ -29,14 +29,12 @@
 	<meta name=viewport content="width=device-width, initial-scale=1">
 	<meta name="format-detection" content="telephone-no">
 
-	<!-- CSS files -->
-	<link rel="stylesheet" href="css/plugins.css">
-
     
 <body>
 
     <nav id="navbar" class="navbar navbar-expand-lg fixed-top navbar-light" aria-label="Main navigation">
         <div class="container">
+    
     
             <!-- 가로 작아질때 메뉴 왼쪽에 三으로 보이게, 게시판 목록과 연결하기 -->
             <button class="navbar-toggler p-0 border-0" type="button" id="navbarSideCollapse" aria-label="Toggle navigation">
@@ -44,52 +42,61 @@
             </button>
             <!-- 三 끝 -->
     
+    
+    
             <!-- 로고부분 (나중에 경로수정하기) -->
-            <a href="index_test.html" class="navbar-brand logo-image">
-                <img src="images/logo.JPG" alt="logo"></a> 
+            <a href="CinemaWay_main.html" class="navbar-brand logo-image">
+                <img src="images/cinemaway_logo.png" alt="logo"></a> 
+    
+            
     
             <!-- 게시판 목록 -->
-                <div class="collapse navbar-collapse" id="navbarSideCollapse">
-                <ul class="navbar-nav mr-auto">
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">영화추천</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="BudapestHotel.html">추천영화</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="littelForest.html">계절별영화</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="The_Wailing.html">분위기별영화</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">장소추천</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="#">추천영화</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">계절별영화</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="#">분위기별영화</a></li>
-                        </ul>
-                    </li>
-                    <li class="nav-item dropdown">
-                        <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
-                        <ul class="dropdown-menu" aria-labelledby="dropdown01">
-                            <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
-                            <li><div class="dropdown-divider"></div></li>
-                            <li><a class="dropdown-item" href="Cinemaway_QNA.html">고객센터</a></li>
-                        </ul>
-                    </li>
-                </ul>
-            </div>
+            <div class="collapse navbar-collapse" id="navbarSideCollapse">
+              <ul class="navbar-nav mr-auto">
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">영화추천</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                          <li><a class="dropdown-item" href="BudapestHotel.html">추천영화</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="littelForest.html">계절별영화</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="The_Wailing.html">분위기별영화</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">장소추천</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                          <li><a class="dropdown-item" href="#">국내/해외</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="#">계절별영화</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="#">분위기별영화</a></li>
+                      </ul>
+                  </li>
+                  <li class="nav-item dropdown">
+                      <a class="nav-link dropdown-toggle" href="#" id="dropdown01" data-bs-toggle="dropdown" aria-expanded="false">게시판</a>
+                      <ul class="dropdown-menu" aria-labelledby="dropdown01">
+                          <li><a class="dropdown-item" href="Cinemaway_review.html">리뷰게시판</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="Cinemaway_pre.html">자유게시판</a></li>
+                          <li><div class="dropdown-divider"></div></li>
+                          <li><a class="dropdown-item" href="Cinemaway_QNA1.html">고객센터</a></li>
+                      </ul>
+                  </li>
+              </ul>
+          </div>
                 <!-- 게시판 목록 끝 -->
+    
+    
+    
+    
             <!-- 검색창 -->
             <!-- d-inline-flex : 부모영역의 테두리가 자식의 크기에 맞게 줄어듬 자신또한 in-line처럼 배치가능 -->
                 <div class="d-inline-flex justify-content-right">
                     <!-- <div class="col-md-5"> -->
                         <div class="form">
-                           <i class="fa fa-search"></i>
+                          <!-- 검색 폰트 위치 수정 -->
+                           <i class="fa fa-search" style="transform: translate(-6px,-8px);"></i>
                            <input type="text" class="form-control form-input" placeholder="작품 또는 장소를 검색해보세요.">
                            <span class="right-pan"></span>
                         </div>
@@ -97,14 +104,17 @@
                 <!-- </div> -->
     
                 <!-- 검색창 끝 -->
+    
+    
+    
             <div class="navbar-collapse offcanvas-collapse" id="navbarsExampleDefault">
                 <ul class="navbar-nav ms-auto navbar-nav-scroll">
-                    <li class="nav-item">
-                        <a class="nav-link active" aria-current="page" href="Cinemaway_login.html">로그인</a>
+                    <li class="nav-item p-3" style="cursor: pointer;" onclick="location.href='Cinemaway_login.html'">로그인
+                        <!-- <a class="nav-link active" aria-current="page" href="Cinemaway_login.html">로그인</a> -->
                     </li>
                 </ul>
                 <span class="nav-item">
-                    <a class="btn-outline-sm" href="#">회원가입</a>
+                    <a class="btn-outline-sm" style="cursor: pointer;" onclick="location.href='movie-signin.html'">회원가입</a>
                 </span>
             </div> <!-- end of navbar-collapse -->
         </div> <!-- end of container -->
@@ -161,21 +171,21 @@
     <div class="swiper-container">
       <div class="swiper-wrapper">
         <div class="swiper-slide">
-            <img src="image1/11/Little_Forest_(리틀_포레스트).jpg" alt="#" onclick="location.href='littelForest.html'">
+            <img src="image1/11/Little_Forest_(리틀_포레스트).jpg" alt="#" onclick="location.href='LittelForest.html'">
             <i class="fa fa-star" aria-hidden="true"></i><span>4.3</span><a class="txt"> /5</a> 
             <p class="movietext1">리틀 포레스트 (2018)</p>
         </div>
-        <div class="swiper-slide"><img src="images/mid.jpg.crdownload" alt="#" onclick="location.href='BudapestHotel.html'">
-            <i class="fa fa-star" aria-hidden="true"></i><span>4.4</span><a class="txt"> /5</a> 
+        <div class="swiper-slide"><img src="images/mid.jpg.crdownload" alt="#"">
+            <i class="fa fa-star" aria-hidden="true"></i><span>4.5</span><a class="txt"> /5</a> 
             <p class="movietext1">Midnight in Paris (2011)</p>
         </div>
-            <div class="swiper-slide"><img src="images/grand_buda.jpg" alt="#">
+            <div class="swiper-slide"><img src="images/grand_buda.jpg" alt="#" onclick="location.href='BudapestHotel.html'"">
                 <i class="fa fa-star" aria-hidden="true"></i><span>4.5</span><a class="txt"> /5</a> 
                 <p class="movietext1">The Grand Budapest Hotel (2014)</p>
             </div>
-                <div class="swiper-slide"><img src="images/plrorida.jpg.crdownload" alt="#">
-                    <i class="fa fa-star" aria-hidden="true"></i><span>4.6</span><a class="txt"> /5</a> 
-                    <p class="movietext1">The Florida Project (2017)</p>
+                <div class="swiper-slide"><img src="images/1/es.png" alt="#" onclick="location.href='EternalSunshine.html'">
+                    <i class="fa fa-star" aria-hidden="true"></i><span>4.2</span><a class="txt"> /5</a> 
+                    <p class="movietext1">Eternal Sunshine of the Spotless Mind (2004)</p>
                 </div>
                     <div class="swiper-slide"><img src="images/befosun.jpg" alt="#">
                         <i class="fa fa-star" aria-hidden="true"></i><span>4.0</span><a class="txt"> /5</a> 
@@ -263,7 +273,7 @@
     <h3 class="category_name">신작 영화부터 체크!</h3>
     <div class="swiper-container">
     <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="image1/12/The_Wailing_(film).png" alt="#" onclick="location.href='The_Wailing.html'">
+        <div class="swiper-slide"><img src="image1/12/The_Wailing_(film).png" alt="#" onclick="location.href='TheWailing.html'">
             <a><i class="fa fa-star" aria-hidden="true"></i><span>4.3</span><a class="txt"> /5</a> 
             <p class="movietext1">INTRUSION (2021)</p></a></div>
         <div class="swiper-slide"><img src="images/Into_the_Wild.jpg" alt="#">
@@ -406,10 +416,10 @@
         </div>
         <div class="col-md-4">
             <div class="card p-3 text-center px-4">
-                <div class="user-image"> <img src="https://i.imgur.com/ACeArwY.jpg" class="rounded-circle" width="80"> </div>
+                <div class="user-image"> <img src="https://s3.ap-northeast-2.amazonaws.com/elasticbeanstalk-ap-northeast-2-176213403491/media/magazine_img/magazine_286/84-%EC%8D%B8%EB%84%A4%EC%9D%BC.jpg" class="rounded-circle" width="80"> </div>
                 <div class="user-content">
-                    <h5 class="mb-0">지은혜</h5> <span>조원 A</span>
-                    <p>모르겠다....재밌는 영화였다</p>
+                    <h5 class="mb-0">지은혜</h5> <span>새발자</span>
+                    <p>개발새발 어떻게든 되었습니다</p>
                 </div>
                 <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
             </div>
@@ -418,7 +428,7 @@
             <div class="card p-3 text-center px-4">
                 <div class="user-image"> <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"> </div>
                 <div class="user-content">
-                    <h5 class="mb-0">강다현</h5> <span>게시판 담당</span>
+                    <h5 class="mb-0">강다현</h5> <span></span>
                     <p>코딩도 재밌었습니다^^</p>
                 </div>
                 <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
@@ -426,10 +436,10 @@
         </div>
             <div class="col-md-6">
                 <div class="card p-3 text-center px-4">
-                    <div class="user-image"> <img src="https://i.imgur.com/w2CKRB9.jpg" class="rounded-circle" width="80"> </div>
+                    <div class="user-image"> <img src="https://ww.namu.la/s/08329c5b43ac83ed26f873c693f6c05e1561cc8c4eedcc082fdb62bb4be1607787a2c5b5331aa90885ac9a6d43a6636dae5339850179392028ce8efc31ab9395aadb2da75bb2904a9e30e8e91220c7a06fbe5112ff6eb24ededc0eb94674f87d" class="rounded-circle" width="80"> </div>
                     <div class="user-content">
-                        <h5 class="mb-0">이영호</h5> <span>인싸</span>
-                        <p>코딩도 재밌었습니다^^</p>
+                        <h5 class="mb-0">이영호</h5> <span>211기 최강 오지랖퍼</span>
+                        <p>코딩이 어려울땐 외주인력 쓰면 장땡.</p>
                     </div>
                     <div class="ratings"> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> <i class="fa fa-star"></i> </div>
             </div>
